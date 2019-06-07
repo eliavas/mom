@@ -1,0 +1,24 @@
+<h1>Mamas en red</h1>
+ 
+<table>
+  <tr>
+    <th>Mama</th>
+    <th>Hijo</th>
+    <th>Edad hijo</th>
+    <th>Direccion</th>
+    <th>Habilidades</th>
+    <th></th>
+  </tr>
+ 
+  <% @formularios.each do |formulario| %>
+    <tr>
+      <td><%= formulario.nombre_mama %></td>
+      <td><%= formulario.nombre_hijo %></td>
+      <td><%= formulario.edad %></td>
+      <td><%= formulario.habilidades %></td>
+      <td><%= link_to 'Show', formulario_path(formulario) %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= link_to 'New mom', new_formulario_path %>

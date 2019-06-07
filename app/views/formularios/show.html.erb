@@ -1,0 +1,28 @@
+<p>
+   <strong>Mama:</strong>	
+   <%= @formulario.nombre_mama %> 
+</p>
+ 
+ <p>
+
+  <strong>Hijo/a:</strong>
+  <%= @formulario.nombre_hijo %>
+</p>
+
+<p>
+  <strong>Edad hijo/a:</strong>
+  <%= @formulario.edad %> 
+</p>
+
+<p>
+  <strong>Direccion:</strong>
+  <%= @formulario.direccion %> 
+</p>
+
+<p>
+  <strong>Habilidades:</strong>
+  <%= @formulario.habilidades %> 
+</p>
+
+<%= link_to 'Edit', edit_formulario_path  %>
+<%= link_to 'Remove', @formulario, method: :delete, data: { confirm: 'Are you sure?' } %>

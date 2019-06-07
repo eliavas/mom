@@ -1,0 +1,34 @@
+
+<h1>Diligencia los siguientes datos</h1>
+
+
+<%= form_with scope: :formulario, url: formularios_path, local: true do |form| %>
+
+  <p>
+    <%= form.label :nombre_mama %><br>
+    <%= form.text_field :nombre_mama %>
+  </p>
+  <p>
+    <%= form.label :nombre_hijo %><br>
+    <%= form.text_field :nombre_hijo %>
+  </p>
+  <p>
+    <%= form.label :edad_hijo %><br>
+    <%= form.text_field :edad %>
+  </p>
+  <p>
+    <%= form.label :direccion %><br>
+    <%= form.text_field :direccion %>
+  </p>
+  <p>
+    <%= form.label :habilidades %><br>
+    <%= form.text_field :habilidades %>
+  </p>
+
+  <%= link_to 'Back', formularios_path %>
+
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
